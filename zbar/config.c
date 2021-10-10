@@ -34,7 +34,7 @@ int zbar_parse_config(const char *cfgstr, zbar_symbol_type_t *sym,
                       zbar_config_t *cfg, int *val)
 {
     const char *dot, *eq;
-    int len;
+    int len = 0;
     char negate;
     if (!cfgstr)
         return (1);

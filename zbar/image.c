@@ -231,7 +231,7 @@ int zbar_image_write(const zbar_image_t *img, const char *filebase)
     int len        = strlen(filebase) + 16;
     char *filename = malloc(len);
     int n = 0, rc = 0;
-    FILE *f;
+    FILE *f = NULL;
     zimg_hdr_t hdr;
     strcpy(filename, filebase);
     if ((img->format & 0xff) >= ' ')

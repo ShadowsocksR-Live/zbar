@@ -21,6 +21,7 @@
  *  http://sourceforge.net/projects/zbar
  *------------------------------------------------------------------------*/
 
+#include <stddef.h>
 #include <assert.h> /* FIXME tmp debug */
 #include <jerror.h>
 #include <jpeglib.h>
